@@ -1,0 +1,22 @@
+<h1>Gönderilen Mesajlar</h1>
+
+<table>
+  <tr>
+    <th>Numara</th>
+    <th>Mesaj</th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @messages.each do |message| %>
+  <tr>
+    <td><%= message.number %></td>
+    <td><%= message.body %></td>
+    <td><%= link_to 'Show', message %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'Yeni Sms Gönder', new_message_path %>

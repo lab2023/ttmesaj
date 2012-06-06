@@ -1,0 +1,17 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Numara:</b>
+  <%= @message.number %>
+</p>
+
+<p>
+  <b>Mesaj:</b>
+  <%= @message.body %>
+</p>
+<p>
+  <b>Durum</b>
+    <%= @message.status %>
+</p>
+
+<%= link_to 'Back', messages_path %>
